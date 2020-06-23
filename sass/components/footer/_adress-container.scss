@@ -1,0 +1,55 @@
+.footer-social-logo {
+  display: flex;
+  width: 207px;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+.footer .logo-studio-footer {
+  color: var(--white-color);
+}
+.footer-social-logo .item + item {
+  padding-left: 10px;
+}
+
+.footer-social-logo .soc {
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-logo-web-color);
+  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-logo .logo {
+  fill: var(--white-color);
+}
+
+.adress-container .adress {
+  color: var(--white-color);
+  padding-top: 10px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress .mailtel:nth-child(-n + 2) {
+  padding-bottom: 9px;
+}
+
+.adress > .mailtel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.adress .city {
+  font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

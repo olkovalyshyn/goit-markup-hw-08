@@ -1,0 +1,37 @@
+.button.block {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.button .button-portfolio {
+  margin-left: 8px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border: 0px;
+  border-radius: 4px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--hover-logo-web-color);
+  }
+}
+// .button .button-portfolio:hover,
+// .button .button-portfolio:focus {
+//   color: var(--white-color);
+//   background-color: var(--hover-logo-web-color);
+// }
+
+.button-portfolio.no-margin {
+  margin-left: 0px;
+}

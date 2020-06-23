@@ -1,0 +1,39 @@
+// .tech-list .item + .item {
+//   margin-left: 30px;
+// }
+
+// .tech-list.list {
+//   display: flex;
+//   padding-left: 0px;
+//   justify-content: center;
+// }
+
+.section-title {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.tech-position {
+  position: relative;
+}
+.section-work {
+  position: absolute;
+  bottom: 0;
+
+  // display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
