@@ -3,7 +3,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 450px;
+  // width: 100%;
 }
 body {
   background-color: var(--white-color);
@@ -12,6 +12,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 .list {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -31,9 +32,14 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // outline: 2px solid tomato;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {

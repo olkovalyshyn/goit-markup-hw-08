@@ -345,7 +345,6 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 450px;
 }
 
 body {
@@ -375,9 +374,15 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -550,6 +555,7 @@ img {
 @media screen and (min-width: 480px) {
   .soft-list .item {
     width: 450px;
+    background-color: red;
   }
 }
 
