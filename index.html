@@ -16,32 +16,40 @@
       <div class="container main-nav">
         <nav class="logo-nav">
           <a href="" class="logo"><span class="logo-web">Web</span> <span class="logo-studio">Studio</span></a>
+          <button class="button-header is-open" type="button" data-menu-button>
+            <svg width="19px" height="19px" aria-label="Переключатель мобільного меню">
+              <use class="icon-close" href=./images/sprite.svg#icon-close></use>
+              <use class="icon-menu" href=./images/sprite.svg#icon-menu></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="container-menu">
           <ul class="site-nav">
             <li class="item"><a href="" class="link current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
-        </nav>
 
-        <ul class="mail-tel-info">
-          <li class="item mail-tel-box tel">
-            <a href="mailto:info@devstudio.com" class="mail">
-              <svg class="mail-tel-icon" width="16px" height="11px">
-                <use href="./images/sprite.svg#icon-image-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item mail-tel-box mail">
-            <a href="tel:+380961111111" class="tel">
-              <svg class="mail-tel-icon" width="10px" height="15px">
-                <use href="./images/sprite.svg#icon-image-tel"></use>
-              </svg>
+          <ul class="mail-tel-info">
+            <li class="item mail-tel-box tel">
+              <a href="mailto:info@devstudio.com" class="mail">
+                <svg class="mail-tel-icon" width="16px" height="11px">
+                  <use href="./images/sprite.svg#icon-image-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="item mail-tel-box mail">
+              <a href="tel:+380961111111" class="tel">
+                <svg class="mail-tel-icon" width="10px" height="15px">
+                  <use href="./images/sprite.svg#icon-image-tel"></use>
+                </svg>
 
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -388,6 +396,7 @@
         </form>
       </div>
     </div>
+<script src="./js/menu.js"></script>
 
     <script src="./js/modal.js"></script>
 

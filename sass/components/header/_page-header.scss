@@ -1,9 +1,35 @@
 .page-header {
+  display: block;
+
+  text-align: left;
+
   background-color: var(--white-color);
   margin-bottom: 0px;
   border-bottom: 1px solid #ececec;
+
+  outline: 2px solid yellow;
 }
 
+.button-header {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  margin-left: 269px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.button-header .icon-close {
+  display: none;
+}
+.button-header.is-open .icon-close {
+  display: block;
+}
+.button-header.is-open .icon-menu {
+  display: none;
+}
 // .logo-nav {
 //   display: flex;
 //   align-items: center;
@@ -14,3 +40,17 @@
 //     align-items: center;
 //     height: 80px;
 // }
+
+.container-menu {
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.container.main-nav {
+  position: relative;
+}

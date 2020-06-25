@@ -340,13 +340,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -405,17 +398,67 @@ img {
 }
 
 .page-header {
+  display: block;
+  text-align: left;
   background-color: var(--white-color);
   margin-bottom: 0px;
   border-bottom: 1px solid #ececec;
+  outline: 2px solid yellow;
+}
+
+.button-header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  margin-left: 269px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.button-header .icon-close {
+  display: none;
+}
+
+.button-header.is-open .icon-close {
+  display: block;
+}
+
+.button-header.is-open .icon-menu {
+  display: none;
+}
+
+.container-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.container.main-nav {
+  position: relative;
 }
 
 .logo {
-  text-decoration: none;
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 15px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
 }
 
 .logo-web {
@@ -424,6 +467,10 @@ img {
 
 .logo-studio {
   color: var(--logo-studio-color);
+}
+
+.site-nav {
+  outline: 2px solid red;
 }
 
 .site-nav .item {
@@ -495,6 +542,10 @@ img {
 .mail-tel-box .mail:hover .mail-tel-icon,
 .mail-tel-box .tel:hover .mail-tel-icon {
   fill: var(--hover-logo-web-color);
+}
+
+.mail-tel-info {
+  outline: 2px solid green;
 }
 
 .mail-tel-info .item + .item {

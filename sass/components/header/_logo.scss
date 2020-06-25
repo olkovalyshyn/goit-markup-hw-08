@@ -1,9 +1,24 @@
 .logo {
-  text-decoration: none;
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  display: inline-block;
+  // text-decoration: none;
+  // font-family: raleway, sans-serif;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 15px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
 }
 .logo-web {
   color: var(--hover-logo-web-color);
