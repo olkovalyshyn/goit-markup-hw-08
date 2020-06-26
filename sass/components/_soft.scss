@@ -10,8 +10,9 @@
 
 .soft-list .item {
   @media screen and (min-width: 480px) {
-    width: 450px;
-    background-color: red;
+    max-width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
