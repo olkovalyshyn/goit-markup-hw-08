@@ -407,14 +407,11 @@ img {
 }
 
 .button-header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0px;
-  padding: 0px;
   border: none;
   background-color: transparent;
-  margin-left: 269px;
+  margin-left: auto;
+  margin-right: 23px;
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -429,6 +426,15 @@ img {
 
 .button-header.is-open .icon-menu {
   display: none;
+}
+
+.logo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-menu {
