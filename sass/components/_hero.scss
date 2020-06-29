@@ -1,7 +1,30 @@
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+  }
+
+  .hero > .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 118px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+  }
+}
+
 .hero {
   // max-width: 1600px;
-  width: 100%;
-  height: 600px;
+  // width: 100%;
+  // height: 600px;
   margin-right: auto;
   margin-left: auto;
 
@@ -14,17 +37,17 @@
 }
 
 .hero > .hero-title {
-  padding-top: 200px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 46px;
-  color: var(--white-color);
+  // padding-top: 200px;
+  // margin-top: 0px;
+  // margin-bottom: 0px;
+  // padding-bottom: 46px;
+  // color: var(--white-color);
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
 }
 
 .hero-button {

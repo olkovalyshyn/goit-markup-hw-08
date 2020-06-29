@@ -1,10 +1,17 @@
 .mail-tel-box .tel,
 .mail-tel-box .mail {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
   color: var(--second-text-color);
   &:hover,
   &:focus {
     color: var(--hover-logo-web-color);
     cursor: pointer;
+    padding-top: 16px;
   }
 
   text-decoration: none;
@@ -15,6 +22,12 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item.mail-tel-box + .mail-tel-box {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+  }
 }
 
 .mail-tel-icon {
@@ -30,7 +43,14 @@
 }
 
 .mail-tel-info {
-  outline: 2px solid green;
+  // outline: 2px solid green;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   // display: flex;
   // align-items: center;
   // margin-left: auto;
@@ -53,7 +73,7 @@
 // }
 
 .mail-tel-info .item + .item {
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 
 // .mail-tel-box {

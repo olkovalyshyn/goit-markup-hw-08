@@ -3,6 +3,7 @@
 // }
 
 .team-list.list {
+  outline: 1px solid red;
   justify-content: center;
   padding-left: 0px;
 }
@@ -21,11 +22,13 @@
 }
 
 .team-list .item {
+  outline: 1px solid red;
   padding-bottom: 24px;
   background-color: var(--white-color);
 }
 
 .section .team-name {
+  outline: 1px solid red;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -35,6 +38,7 @@
 }
 
 .section .team-position {
+  outline: 1px solid red;
   margin-bottom: 16px;
   margin-top: 0px;
   font-weight: 400;
@@ -45,14 +49,18 @@
 }
 
 .section.background-color {
+  outline: 1px solid red;
   background-color: var(--button-background-color);
 }
 
 .section-title.team {
+  outline: 1px solid red;
   margin-bottom: 50px;
 }
 
 .soc > .logo {
+  outline: 1px solid red;
+
   display: block;
   fill: var(--social-logo-base-color);
   background-position: 50% 50%;
@@ -66,6 +74,7 @@
 }
 
 .soc {
+  outline: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
