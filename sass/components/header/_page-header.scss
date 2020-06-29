@@ -22,7 +22,7 @@
   margin-top: 22px;
   margin-bottom: 22px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
@@ -37,8 +37,10 @@
   display: none;
 }
 .logo-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (max-width: 479px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 //   .main-nav {

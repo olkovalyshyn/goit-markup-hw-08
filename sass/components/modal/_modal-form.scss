@@ -4,7 +4,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
+  // width: 528px;
+  width: 100%;
   height: 581px;
   background-color: var(--white-color);
 
@@ -41,7 +42,8 @@
 
 .form {
   position: absolute;
-  width: 448px;
+  // width: 448px;
+  width: 100%;
   height: 581px;
   margin-left: 40px;
   margin-right: auto;
