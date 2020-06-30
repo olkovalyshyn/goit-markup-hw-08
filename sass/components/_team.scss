@@ -17,8 +17,11 @@
 
 .team-social-logo {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-left: 0px;
+}
+.team-social-logo .soc + .soc {
+  margin-left: 10px;
 }
 
 .team-list .item {

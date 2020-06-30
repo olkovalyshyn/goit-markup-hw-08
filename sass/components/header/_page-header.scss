@@ -56,10 +56,10 @@
 // }
 
 .container-menu {
-  display: block;
+  display: none;
 
   &.is-open {
-    display: none;
+    display: block;
   }
   @media screen and (max-width: 767px) {
     // display: none;
