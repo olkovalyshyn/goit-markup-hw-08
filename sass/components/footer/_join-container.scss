@@ -1,4 +1,7 @@
 .join-container {
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
+  }
   margin-left: 69px;
 }
 

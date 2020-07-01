@@ -1,8 +1,18 @@
 .footer-social-logo {
-  display: flex;
-  width: 207px;
-  justify-content: space-between;
-  padding-left: 0px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  // display: flex;
+  // width: 207px;
+  // justify-content: space-between;
+  // padding-left: 0px;
+}
+
+.footer-social-logo .logo + .logo {
+  margin-left: 10;
 }
 
 .footer .logo-studio-footer {
