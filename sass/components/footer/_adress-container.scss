@@ -10,6 +10,54 @@
   // justify-content: space-between;
   // padding-left: 0px;
 }
+.adress-container .logo {
+  @media screen and (max-width: 767px) {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+.footer .adress-container .adress {
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+  }
+  color: var(--white-color);
+  // padding-top: 10px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.adress-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress .mailtel:nth-child(-n + 2) {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 8px;
+  }
+  padding-bottom: 9px;
+}
+
+.adress > .mailtel {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress .city {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--white-color);
+  font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .footer-social-logo .logo + .logo {
   margin-left: 10;
@@ -33,33 +81,4 @@
 
 .footer-social-logo .logo {
   fill: var(--white-color);
-}
-
-.adress-container .adress {
-  color: var(--white-color);
-  padding-top: 10px;
-
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-.adress-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.adress .mailtel:nth-child(-n + 2) {
-  padding-bottom: 9px;
-}
-
-.adress > .mailtel {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.adress .city {
-  font-style: normal;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
