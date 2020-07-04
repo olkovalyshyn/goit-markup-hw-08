@@ -369,6 +369,7 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  outline: 2px solid tomato;
 }
 
 body {
@@ -377,7 +378,6 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   text-align: center;
-  width: calc(100%-30px);
 }
 
 .list {
@@ -409,12 +409,20 @@ img {
 }
 
 .page-header {
+  position: relative;
   display: block;
   text-align: left;
   background-color: var(--white-color);
   margin-bottom: 0px;
   border-bottom: 1px solid #ececec;
   outline: 2px solid yellow;
+}
+
+.container.main-nav {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid yellowgreen;
 }
 
 .button-header {
@@ -486,10 +494,6 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-.container.main-nav {
-  position: relative;
 }
 
 .page-header__logo {
@@ -627,9 +631,25 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero {
-    width: 480px;
     height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/hero-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--temporary-background-color);
+    text-align: center;
   }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/hero-img@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) {
   .hero > .hero-title {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -647,13 +667,6 @@ img {
 .hero {
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/hero-img.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--temporary-background-color);
-  text-align: center;
 }
 
 .hero-button {
@@ -724,6 +737,8 @@ img {
 
 .soft-list .item {
   outline: 1px solid green;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .section-soft {
@@ -784,6 +799,27 @@ img {
   text-transform: uppercase;
 }
 
+.team-list .thumb {
+  outline: 1px solid green;
+  height: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list .thumb {
+    height: 260px;
+  }
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 .team-list.list {
   outline: 1px solid red;
   -webkit-box-pack: center;
@@ -797,8 +833,10 @@ img {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.team-list .item + .item {
-  margin-left: 30px;
+@media screen and (min-width: 1600px) {
+  .team-list .item + .item {
+    margin-left: 30px;
+  }
 }
 
 .team-social-logo {
@@ -1058,6 +1096,10 @@ img {
   .join-container {
     margin-left: 0px;
   }
+}
+
+.footer-social-logo .soc + .soc {
+  margin-left: 10px;
 }
 
 .join-container .footer-title {
@@ -1389,13 +1431,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 
 .form {
-  position: absolute;
   text-align: center;
-  width: 450px;
-  height: 609px;
 }
 
 .form-title {
@@ -1406,7 +1449,6 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 40px;
   margin-bottom: 30px;
   color: var(--primary-text-color);
 }
@@ -1502,9 +1544,6 @@ img {
 }
 
 .agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1541,8 +1580,6 @@ img {
 }
 
 .modal-send {
-  margin-left: 124px;
-  margin-right: 124px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;

@@ -1,9 +1,28 @@
-@media screen and (max-width: 767px) {
-  .hero {
-    width: 480px;
+.hero {
+  @media screen and (max-width: 767px) {
+    // max-width: 480px;
     height: 400px;
-  }
 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--temporary-background-color);
+    text-align: center;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) {
   .hero > .hero-title {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -28,12 +47,12 @@
   margin-right: auto;
   margin-left: auto;
 
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--temporary-background-color);
-  text-align: center;
+  // background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img.jpg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-color: var(--temporary-background-color);
+  // text-align: center;
 }
 
 .hero > .hero-title {
@@ -65,3 +84,16 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+
+// @media screen and (max-width: 767px) {
+//   .hero {
+//     width: 480px;
+//     height: 400px;
+
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img.jpg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-color: var(--temporary-background-color);
+//     text-align: center;
+//   }

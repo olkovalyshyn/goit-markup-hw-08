@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+
   display: block;
 
   text-align: left;
@@ -10,6 +12,17 @@
   outline: 2px solid yellow;
 }
 
+.container.main-nav {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid yellowgreen;
+}
+
+//   @media screen and (max-width: 767px) {
+//     width: 480px;
+//   }
+// }
 .button-header {
   &:hover .icon-close,
   &:hover .icon-menu,
@@ -46,6 +59,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     align-items: center;
+    // width: 480px;
   }
 }
 
@@ -78,8 +92,4 @@
     display: flex;
     justify-content: space-between;
   }
-}
-
-.container.main-nav {
-  position: relative;
 }
