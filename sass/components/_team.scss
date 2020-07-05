@@ -134,13 +134,11 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--hover-logo-web-color);
   }
 }
-// .soc:hover {
-//   background-color: var(--hover-logo-web-color);
-// }
 
 .team-social-logo > .soc:hover .logo {
   fill: var(--white-color);

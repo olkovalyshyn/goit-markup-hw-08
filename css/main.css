@@ -340,66 +340,32 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .section {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 480px;
-  }
-  .section-title {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0.03em;
-    font-size: 28px;
-    line-height: 1.18;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 28px;
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-  }
-  .section-title {
-    font-size: 36px;
-    line-height: 1.17;
-  }
-}
-
-.footer-section {
+.container {
   margin-left: auto;
   margin-right: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 100%;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.section-title {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-size: 28px;
+  line-height: 1.18;
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .section.for-desctop {
-    padding-top: 0px;
-  }
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 body {
@@ -434,20 +400,6 @@ img {
   height: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-container {
-    height: 603px;
-    padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-container {
-    height: 463px;
-    padding-top: 60px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: -webkit-box;
@@ -459,9 +411,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 252px;
   }
 }
 
@@ -1228,7 +1177,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc:hover {
+.soc:hover, .soc:focus {
   background-color: var(--hover-logo-web-color);
 }
 
@@ -1338,6 +1287,11 @@ img {
   padding-left: 0px;
 }
 
+.adress-container .logo {
+  outline: 1px solid red;
+  margin-top: 60px;
+}
+
 @media screen and (max-width: 1199px) {
   .adress-container .logo {
     font-family: Raleway;
@@ -1365,21 +1319,22 @@ img {
 
 @media screen and (max-width: 767px) {
   .footer .adress-container .adress {
-    padding-top: 20px;
+    margin-top: 20px;
   }
 }
 
 .adress-container {
-  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .adress .mailtel:nth-child(-n + 2) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 @media screen and (max-width: 767px) {
   .adress .mailtel:nth-child(-n + 2) {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -1410,7 +1365,7 @@ img {
 }
 
 .footer-social-logo .item + item {
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .footer-social-logo .soc {
@@ -1444,7 +1399,7 @@ img {
 .join-container .footer-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1454,8 +1409,8 @@ img {
 
 @media screen and (max-width: 1199px) {
   .sign-up-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1493,7 +1448,7 @@ img {
 .sign-up-container .footer-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1554,7 +1509,6 @@ img {
 }
 
 .email-input {
-  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1563,7 +1517,7 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-right: 12px;
-  padding-left: 16px;
+  margin-left: 16px;
   background-color: var(--footer-background-color);
 }
 

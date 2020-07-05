@@ -14,6 +14,9 @@
   // padding-left: 0px;
 }
 .adress-container .logo {
+  outline: 1px solid red;
+  margin-top: 60px;
+
   @media screen and (max-width: 1199px) {
     font-family: Raleway;
     font-weight: 700;
@@ -29,7 +32,7 @@
 }
 .footer .adress-container .adress {
   @media screen and (max-width: 767px) {
-    padding-top: 20px;
+    margin-top: 20px;
   }
   color: var(--white-color);
   // padding-top: 10px;
@@ -39,15 +42,15 @@
   letter-spacing: 0.03em;
 }
 .adress-container {
-  // padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .adress .mailtel:nth-child(-n + 2) {
   @media screen and (max-width: 767px) {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .adress > .mailtel {
@@ -76,7 +79,7 @@
   color: var(--white-color);
 }
 .footer-social-logo .item + item {
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .footer-social-logo .soc {
