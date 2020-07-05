@@ -22,6 +22,11 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo-web {
   color: var(--hover-logo-web-color);

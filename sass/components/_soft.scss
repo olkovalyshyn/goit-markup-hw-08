@@ -67,7 +67,15 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  outline: 1px solid green;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+    width: 270px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  // outline: 1px solid green;
   margin-right: 0px;
   margin-left: 0px;
 
@@ -78,9 +86,11 @@
   // }
 }
 
-// .soft-list .item + .item {
-//   margin-left: 30px;
-// }
+.soft-list .item + .item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
 
 .section-soft {
   // outline: 1px solid red;

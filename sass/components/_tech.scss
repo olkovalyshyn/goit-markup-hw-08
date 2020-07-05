@@ -1,19 +1,22 @@
-// .tech-list .item + .item {
-//   margin-left: 30px;
-// }
+@media screen and (min-width: 1200px) {
+  .tech-list.list {
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .tech-list .item + .item {
+    margin-left: 30px;
+  }
+}
 
-// .tech-list.list {
-//   display: flex;
-//   padding-left: 0px;
-//   justify-content: center;
-// }
 .section.is-hidden {
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 .section-title {
   display: inline-block;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 .tech-position {

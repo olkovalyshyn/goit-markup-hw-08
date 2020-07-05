@@ -1,14 +1,21 @@
 .modal {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  z-index: 1000;
 
   // width: 528px;
   @media screen and (max-width: 1199px) {
     width: 450px;
     height: 609px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
   // width: 100%;
   // height: 581px;
   background-color: var(--white-color);
@@ -74,6 +81,12 @@
   text-align: center;
   letter-spacing: 0.03em;
 
+  & br {
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
   // margin-top: 40px;
   margin-bottom: 30px;
 
@@ -91,8 +104,12 @@
   display: flex;
   flex-direction: column;
   margin-right: 0px;
-
-  width: 370px;
+  @media screen and (max-width: 1199px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .form-field:not(:last-child) {

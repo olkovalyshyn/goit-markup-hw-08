@@ -1,7 +1,6 @@
 .button.block {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   padding-left: 0px;
   margin-top: 0px;
 
@@ -12,8 +11,10 @@
     margin-bottom: 30px;
     justify-content: center;
   }
-
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .button .button-portfolio {
