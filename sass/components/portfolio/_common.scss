@@ -1,6 +1,11 @@
 .section.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 66px;
+    padding-bottom: 60px;
+  }
 }
 
 .portfolio-projects {
@@ -11,4 +16,8 @@
 .footer.section.no-padding {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.container-menu {
+  z-index: 999;
 }

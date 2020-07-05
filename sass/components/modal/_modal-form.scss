@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -80,6 +80,12 @@
   color: var(--primary-text-color);
 }
 
+.form-list {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 .form-field {
   position: relative;
   display: flex;
@@ -93,9 +99,9 @@
   margin-bottom: 28px;
 }
 
-.form-field:last-child {
-  margin-bottom: 40px;
-}
+// .form-field:last-child {
+//   margin-bottom: 20px;
+// }
 
 .form-label {
   position: absolute;
@@ -171,17 +177,24 @@
 }
 
 .agreement {
-  // display: flex;
+  display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
+.agreement-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .icon {
   display: inline-block;
   width: 16px;
