@@ -348,6 +348,24 @@
   width: 100%;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section-title {
   font-weight: 700;
   text-align: center;
@@ -1110,6 +1128,12 @@ img {
   background-color: var(--white-color);
 }
 
+.soc-link {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-logo-base-color);
+}
+
 .section .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -1185,6 +1209,20 @@ img {
   fill: var(--white-color);
 }
 
+.customers-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 90px;
+}
+
 .customers-list.list {
   padding-left: 0px;
   -webkit-box-pack: center;
@@ -1193,20 +1231,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 1199px) {
-  .customers-list.list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .customers-list.list {
-    margin: -15px;
-  }
 }
 
 .customers-list .item {
@@ -1287,11 +1311,6 @@ img {
   padding-left: 0px;
 }
 
-.adress-container .logo {
-  outline: 1px solid red;
-  margin-top: 60px;
-}
-
 @media screen and (max-width: 1199px) {
   .adress-container .logo {
     font-family: Raleway;
@@ -1339,12 +1358,14 @@ img {
 }
 
 .adress > .mailtel {
+  display: block;
   margin-top: 0px;
   margin-bottom: 0px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
 }
 
 .adress .city {

@@ -1,6 +1,13 @@
 .customers-list {
   // display: flex;
 }
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+}
 
 .customers-list.list {
   // outline: 1px solid red;
@@ -8,14 +15,14 @@
   justify-content: center;
   display: flex;
 
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
+  // @media screen and (max-width: 1199px) {
+  //   flex-wrap: wrap;
 
-    margin: -15px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin: -15px;
-  }
+  //   margin: -15px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   margin: -15px;
+  // }
 }
 
 .customers-list .item {

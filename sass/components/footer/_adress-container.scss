@@ -14,8 +14,8 @@
   // padding-left: 0px;
 }
 .adress-container .logo {
-  outline: 1px solid red;
-  margin-top: 60px;
+  // outline: 1px solid red;
+  // margin-top: 60px;
 
   @media screen and (max-width: 1199px) {
     font-family: Raleway;
@@ -54,6 +54,8 @@
 }
 
 .adress > .mailtel {
+  display: block;
+
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -61,6 +63,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
 }
 .adress .city {
   font-size: 14px;
