@@ -6,27 +6,36 @@
 //     margin-right: auto;
 //     width: 480px;
 //   }
+.section {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .container {
+
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
