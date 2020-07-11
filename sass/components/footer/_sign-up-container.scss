@@ -1,7 +1,7 @@
 .sign-up-container {
   @media screen and (max-width: 1199px) {
     margin-top: 60px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 94px;
@@ -9,13 +9,15 @@
 }
 .sign-up-container .list-email {
   margin-bottom: 20px;
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
-  }
-}
-.sign-up-container .list-email {
   margin-left: auto;
   margin-right: auto;
+  // @media screen and (max-width: 767px) {
+  //   min-width: 450px;
+  // }
+}
+.sign-up-container .list-email {
+  // margin-left: auto;
+  // margin-right: auto;
   @media screen and (max-width: 1199px) {
     max-width: 450px;
   }
@@ -82,15 +84,22 @@
 }
 
 .email-input {
-  // width: 100%;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-right: 12px;
-  margin-left: 16px;
+  margin: 0px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--footer-background-color);
+
+  // @media screen and (max-width: 767px) {
+  //   max-width: 450px;
+  // }
 
   @media screen and (min-width: 1200px) {
     width: 358px;
@@ -105,7 +114,7 @@
   }
   .adress-container {
     margin-right: 69px;
-    padding-bottom: 0px;
+    // padding-bottom: 0px;
   }
   .adress-container .adress {
     margin-top: 20px;

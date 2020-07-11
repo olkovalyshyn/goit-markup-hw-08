@@ -31,9 +31,10 @@
   }
 }
 .footer .adress-container .adress {
-  @media screen and (max-width: 767px) {
-    margin-top: 20px;
-  }
+  margin-top: 20px;
+
+  // @media screen and (max-width: 767px) {
+  // }
   color: var(--white-color);
   // padding-top: 10px;
 
@@ -42,12 +43,13 @@
   letter-spacing: 0.03em;
 }
 .adress-container {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .adress .mailtel:nth-child(-n + 2) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 8px;
   }
   margin-bottom: 9px;
