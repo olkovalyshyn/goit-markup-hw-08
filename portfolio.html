@@ -17,7 +17,7 @@
         <nav class="logo-nav">
           <a href="" class="page-header__logo"><span class="logo-web">Web</span> <span class="logo-studio">Studio</span></a>
           <button class="button-header" type="button" data-menu-button>
-            <svg width="19px" height="19px" aria-label="Переключатель мобільного меню">
+            <svg width="40px" height="40px" aria-label="Переключатель мобільного меню">
               <use class="icon-close" href=./images/sprite.svg#icon-close></use>
               <use class="icon-menu" href=./images/sprite.svg#icon-menu></use>
             </svg>
@@ -84,9 +84,9 @@
     </header> -->
 
     <!-- Головний блок -->
-    <main class="section portfolio">
-      <section>
-        <div class="unknown">
+    <main>
+      <section class="section portfolio">
+        <div class="container">
           <h1 class="portfolio-projects">My projects</h1>
           <!-- Фільтр проектів -->
           <ul class="button block">
@@ -293,9 +293,9 @@
             <div class="adress-container">
               <a href="" class="logo"><span class="logo-web">Web</span> <span class="logo-studio-footer">Studio</span></a>
               <address class="adress">
-                <p class="mailtel city">г. Киев, пр-т Леси Украинки, 26</p>
-                <p class="mailtel">info@example.com</p>
-                <p class="mailtel">+38 099 111 11 11</p>
+                <a href="" class="mailtel city">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="" class="mailtel">info@example.com</a>
+                <a href="" class="mailtel">+38 099 111 11 11</a>
               </address>
             </div>
             <!--Join-->
@@ -303,24 +303,32 @@
               <p class="footer-title">присоединяйтесь</p>
               <ul class="list footer-social-logo">
                 <li class="soc instagram">
-                  <svg class="logo" width="20px" height="20px">
-                    <use href="./images/sprite.svg#icon-logo-instagram"></use>
-                  </svg>
+                  <a href="" class="soc-link">
+                    <svg class="logo" width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-logo-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="soc twitter">
-                  <svg class="logo" width="20px" height="20px">
-                    <use href="./images/sprite.svg#icon-logo-twitter"></use>
-                  </svg>
+                  <a href="" class="soc-link">
+                    <svg class="logo" width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-logo-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="soc facebook">
-                  <svg class="logo" width="20px" height="20px">
-                    <use href="./images/sprite.svg#icon-logo-facebook"></use>
-                  </svg>
+                  <a href="" class="soc-link">
+                    <svg class="logo" width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-logo-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="soc linkedin">
-                  <svg class="logo" width="20px" height="20px">
-                    <use href="./images/sprite.svg#icon-logo-linkedin"></use>
-                  </svg>
+                  <a href="" class="soc-link">
+                    <svg class="logo" width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-logo-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -328,20 +336,17 @@
           <!-- Sign up -->
           <div class="sign-up-container">
             <p class="footer-title">Подпишитесь на рассылку</p>
-            <ul class="list">
-              <li class="list-email">
-                <label class="email-label"> <input class="email-input" type="email" name="email" placeholder="E-mail" />
-                </label>
-              </li>
-              <li class="list-button">
-                <button class="footer-button">
-                  Подписаться
-                  <svg class="button-icon" width="24px" height="24px">
-                    <use href="./images/sprite.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+            <form class="list">
+              <label class="email-label"> <input class="email-input" type="email" name="email" placeholder="E-mail" />
+              </label>
+              <button class="footer-button">
+                Подписаться
+                <svg class="button-icon" width="24px" height="24px">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+    
           </div>
         </div>
       </div>

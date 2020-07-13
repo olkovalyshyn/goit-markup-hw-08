@@ -87,17 +87,17 @@
     }
   }
 
-  // margin-top: 40px;
+  margin-top: 0px;
   margin-bottom: 30px;
 
   color: var(--primary-text-color);
 }
 
-.form-list {
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
+// .form-list {
+//   padding-left: 0px;
+//   margin-top: 0px;
+//   margin-bottom: 20px;
+// }
 
 .form-field {
   position: relative;
@@ -196,7 +196,7 @@
 .agreement {
   display: flex;
   align-items: center;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   font-family: Roboto;
   font-size: 12px;
