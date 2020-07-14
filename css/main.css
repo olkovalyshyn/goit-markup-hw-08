@@ -786,6 +786,8 @@ img {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1666,7 +1668,6 @@ img {
 }
 
 .container.flex {
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1675,7 +1676,6 @@ img {
 }
 
 .flex-element {
-  outline: 1px solid green;
   width: 450px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -1749,6 +1749,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: var(--primary-text-color);
 }
