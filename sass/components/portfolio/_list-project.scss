@@ -1,12 +1,12 @@
 .container.flex {
-  // outline: 1px solid red;
+  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   // justify-content: center;
 }
 
 .flex-element {
-  // outline: 1px solid green;
+  outline: 1px solid green;
 
   // width: 370px;
   width: 450px;
@@ -19,6 +19,12 @@
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -74,6 +80,8 @@
   }
 }
 .link-projects {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: var(--primary-text-color);
 }
@@ -93,7 +101,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  width: 322px;
+  // width: 322px;
 
   color: var(--second-text-color);
   font-weight: 400;
@@ -143,6 +151,7 @@
   border: 1px solid #eeeeee;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  flex-grow: 1;
 }
 
 .thumb-portfolio {
