@@ -815,13 +815,15 @@ img {
 
 @media screen and (max-width: 1199px) {
   .hero {
-    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -840,10 +842,9 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-top: 200px;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     color: var(--white-color);
   }
 }
@@ -852,7 +853,6 @@ img {
   .hero > .hero-title {
     margin-top: 0px;
     margin-bottom: 30px;
-    padding-top: 118px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
@@ -861,11 +861,6 @@ img {
     text-transform: uppercase;
     color: var(--white-color);
   }
-}
-
-.hero {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .hero-button {
@@ -1667,12 +1662,13 @@ img {
   background-color: var(--hover-logo-web-color);
 }
 
-.container.flex {
+.list-projects.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 0px;
 }
 
 .flex-element {
